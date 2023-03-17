@@ -1,50 +1,38 @@
-import styled from "styled-components";
 import { BsGithub } from "react-icons/bs";
+import { SiVelog } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate();
   return (
-    <SWrapper>
-      <SHeaderContatiner>
-        <span className="title">Nayul's</span>
-        <div className="category">
-          <button className="category name">About Me</button>
-          <button className="category name">Projects</button>
-          <button className="category name">Contact</button>
+    <div className="w-full h-24 flex justify-center ">
+      <div className="flex flex-row justify-between items-end w-4/5">
+        <span className="m-2.5 text-3xl title">Nayul's</span>
+        <div className="flex category">
+          <button
+            className="m-2.5 category-name"
+            onClick={() => {
+              navigate("/aboutme");
+            }}
+          >
+            About Me
+          </button>
+          <button
+            className="m-2.5 category-name"
+            onClick={() => {
+              navigate("/project");
+            }}
+          >
+            Projects
+          </button>
+          {/* <button className="m-2.5 category-name">Contact</button> */}
         </div>
-        <div className="my_record link">
-          <BsGithub />
+        <div className="flex my_record link">
+          <BsGithub className="m-2.5 cursor-pointer" />
+          <SiVelog className="m-2.5 cursor-pointer" />
         </div>
-      </SHeaderContatiner>
-    </SWrapper>
+      </div>
+    </div>
   );
 };
-const SWrapper = styled.div`
-  width: 100%;
-  height: 100px;
-  border-bottom: 2px solid grey;
-  display: flex;
-  justify-content: center;
-`;
-const SHeaderContatiner = styled.div`
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  .title {
-    font-size: 2rem;
-  }
-  .category {
-    display: flex;
-    .name {
-      background-color: white;
-      border: none;
-      font-size: 20px;
-      cursor: pointer;
-      margin: 0px 10px;
-    }
-  }
-  .link {
-    cursor: pointer;
-  }
-`;
+
 export default Header;
