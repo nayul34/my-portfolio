@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-full h-28 flex justify-center ">
-      <div className="flex flex-row justify-between items-end w-4/5">
+    <div className="w-full h-24 flex justify-center sticky top-0 ">
+      <div className="flex flex-row justify-between items-end w-4/5  bg-white">
         <span
           className="m-2.5 text-5xl title cursor-pointer"
           onClick={() => {
