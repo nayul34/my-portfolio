@@ -9,20 +9,23 @@ import Look from "./pages/Team/Look";
 import Clone from "./pages/Team/Clone";
 import Portfolio from "./pages/Solo/Portfolio";
 import Realestate from "./pages/Solo/Realestate";
+import { AnimatePresence } from "framer-motion";
 function App() {
   return (
-    <div className="App">
+    <div className="App h-auto min-h-full pb-24">
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/aboutme" element={<Aboutme />} />
-          <Route path="/project/Look-At-Me" element={<Look />} />
-          <Route path="/project/clone" element={<Clone />} />
-          <Route path="/project/portfolio" element={<Portfolio />} />
-          <Route path="/project/real_estate" element={<Realestate />} />
-        </Routes>
+        <AnimatePresence>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/project" element={<Project />} />
+            <Route path="/aboutme" element={<Aboutme />} />
+            <Route path="/project/lookatme" element={<Look />} />
+            <Route path="/project/clone" element={<Clone />} />
+            <Route path="/project/portfolio" element={<Portfolio />} />
+            <Route path="/project/real_estate" element={<Realestate />} />
+          </Routes>
+        </AnimatePresence>
         <Footer />
       </BrowserRouter>
     </div>
