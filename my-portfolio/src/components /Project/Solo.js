@@ -19,70 +19,108 @@ const Solo = () => {
     { id: 5, title: "게시물 작성", src: mainaddpost },
     { id: 6, title: "반응형 ", src: mainresponsive },
   ]);
+  const solo = [
+    {
+      id: 1,
+      title: "부동산 웹사이트(진행중)",
+      images: images,
+      subtitle: "패션을 공유하고 대여 서비스까지 제공하는 웹 서비스입니다.",
+      content: "Next.js를 사용하여 ",
+      function1: "오시는길(지도), 블로그 연결 등",
+      function2: "• Next.js",
+      function3: "• Netlify를 이용하여 정적웹사이트 배포",
+      skill: "Javascript, Next.js, vercel",
+      github_link: "https://github.com/codestates-seb/seb41_main_035",
+      github: "github.com/codestates-seb/seb41_main_035",
+      retrospect_link:
+        "https://velog.io/@dagg762/%EB%A9%94%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9A%8C%EA%B3%A0",
+      retrospect: "velog.io/@dagg762",
+      goto: "/project/Realestate",
+    },
+    {
+      id: 2,
+      title: "포트폴리오 웹사이트",
+      images: images,
+      subtitle: "포트폴리오 목적으로 제작한 웹사이트입니다.",
+      content:
+        " 백엔드와 협업한 첫 프로젝트이며 서버와 통신을 하는 방식을 이해하고 익숙해지는 계기가 되었습니다. 그리고 redux-toolkit을",
+      function1: "• Tailwind를 이용하여 CSS 작업",
+      function2: "• Vercel를 이용하여 정적 웹사이트 배포",
+
+      skill: "React, Styled-component, Javascript, Redux-toolkit, Axios",
+      github_link: "https://github.com/codestates-seb/seb41_pre_007",
+      github: "github.com/codestates-seb/seb41_pre_007",
+      retrospect_link:
+        "https://velog.io/@dagg762/%ED%94%84%EB%A6%AC%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0",
+      retrospect: "velog.io/@dagg762",
+      goto: "/project/Portfolio",
+    },
+  ];
   return (
     <div className="w-4/5 bg-emerald-600/50 education flex flex-col justify-center items-center">
       <p className="text-3xl text-white text-left w-4/5 m-3">Solo Project</p>
-      <div className="drop-shadow-2xl bg-white w-4/5 flex flex-col items-center mb-4 p-3 rounded-md ">
-        <p className=" text-4xl">부동산 웹사이트(진행중)</p>
-        <div className="project-introduce flex">
-          <Slider images={images} />
-          <div className="introduce">
-            {" "}
-            <p>어머니가 운영하는 부동산의 웹사이트입니다.</p>
-            <p>Next.js를 사용하여 </p>
-            <div className="mt-4">
-              <ul>
-                <li>
-                  • 게시글 및 댓글 CRUD , 채팅 기능 API(조회, 전송),
-                  정렬기능(좋아요 많은순, 최신 순, 가격 높은 순/낮은 순),
-                  필터기능(대여 가능, 카테고리 별)
-                </li>
-              </ul>
+      {solo.map((data) => {
+        return (
+          <div
+            key={data.id}
+            className="bg-white w-4/5 flex flex-col items-center mb-4 p-5 rounded-md "
+          >
+            <p className=" text-4xl">{data.title}</p>
 
-              <div className="flex">
-                <p>•Skill</p>
-                <p>Javascript, React, Styled-component, Axios, Aws(S3)</p>
-              </div>
-              <div className="flex">
-                <p>•Github</p>
-                <a
-                  href="https://github.com/codestates-seb/seb41_main_035"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  github.com/codestates-seb/seb41_main_035
-                </a>
-              </div>
-              <div className="flex">
-                <p>•회고</p>
-                <a
-                  href="https://velog.io/@dagg762/%EB%A9%94%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9A%8C%EA%B3%A0"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  velog.io/@dagg762
-                </a>
+            <div className="project-introduce flex mt-8 w-full">
+              <Slider images={data.images} />
+              <div className="introduce ml-4">
+                <p className="text-xl"> ✔︎개요</p>
+                <p>{data.subtitle} </p>
+                <p>{data.content}</p>
+
+                <div className="mt-4">
+                  <p className="text-xl"> ✔︎역할</p>
+                  <ul>
+                    <li> {data.function1}</li>
+                    <li> {data.function2}</li>
+                    <li> {data.function3}</li>
+                    <li> {data.function4}</li>
+                    <li> {data.function5}</li>
+                  </ul>
+                </div>
+                <div className="mt-4">
+                  <p className="text-xl">✔︎Skill</p>
+                  <p>{data.skill}</p>
+                </div>
+                <div className="flex mt-4">
+                  <div className="flex justify-center ">
+                    <a
+                      href={data.github_link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mr-2 bg-slate-200"
+                    >
+                      Github
+                    </a>
+                    <a
+                      href={data.retrospect_link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="ml-2 bg-slate-200"
+                    >
+                      Velog(회고)
+                    </a>
+                  </div>
+                  <button
+                    className="bg-slate-200 hover:bg-slate-400 ml-8"
+                    onClick={() => {
+                      navigate(data.goto);
+                    }}
+                  >
+                    자세히 보기
+                  </button>
+                </div>
               </div>
             </div>
-            <button
-              className="bg-slate-200"
-              onClick={() => {
-                navigate("/project/Look-At-Me");
-              }}
-            >
-              자세히 보기
-            </button>
           </div>
-        </div>
-      </div>
-
-      <div className="bg-white w-4/5 flex flex-col items-center mb-4 p-3 rounded-md ">
-        <p className=" text-4xl">포트폴리오 웹사이트 </p>
-        <div className="project-introduce flex">
-          <Slider images={images} />
-          <div className="introduce">hihi</div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 };
