@@ -20,29 +20,31 @@ const Slider = ({ images }) => {
 
   return (
     <div>
-      <div className="picture flex">
+      <div className="picture flex ">
         <button>
           <GrPrevious
+            className="text-lg"
             onClick={() => {
               moveSlide(-1);
             }}
           />
         </button>
-        <div className="window bg-slate-200 w-96 h-96 overflow-hidden rounded-md border-2">
-          <div className="flexbox flex" style={style}>
+        <div className="window bg-slate-200 w-104 h-84 overflow-hidden  rounded-md border-2">
+          <div className="flexbox flex " style={style}>
             {images.current.map((img) => (
               <div
                 key={img.id}
-                className="img  w-96 h-96 bg-center bg-contain bg-no-repeat flex-none"
+                className="img  w-104 h-96 bg-center bg-contain bg-no-repeat flex-none justify-center "
                 style={{ backgroundImage: `url(${img.src})` }}
               >
-                <p> {img.title}</p>
+                <p className="text-center text-xl mt-4"> {img.title}</p>
               </div>
             ))}
           </div>
         </div>
         <button>
           <GrNext
+            className="text-lg"
             onClick={() => {
               moveSlide(1);
             }}

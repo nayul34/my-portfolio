@@ -1,54 +1,45 @@
-import { BsGithub } from "react-icons/bs";
-import { SiVelog } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-full h-24 flex justify-center sticky top-0 ">
-      <div className="flex flex-row justify-between items-end w-4/5  bg-white">
-        <span
-          className="m-2.5 text-5xl title cursor-pointer"
+    <div className="w-full h-32 flex flex-col items-center sticky top-0  bg-slate-100  z-50">
+      <p
+        className=" text-4xl pt-8 title cursor-pointer text-slate-600"
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        Nayul's Portfolio
+      </p>
+
+      <div className="flex category  mt-2 w-1/2 justify-around">
+        <button
+          className="m-2.5 category-name text-2xl text-slate-600 hover:text-slate-400"
           onClick={() => {
+            window.scrollTo(0, 0);
             navigate("/");
           }}
         >
-          Nayul's
-        </span>
-        <div className="flex category">
-          <button
-            className="m-2.5 category-name text-xl"
-            onClick={() => {
-              navigate("/");
-            }}
-          >
-            Home
-          </button>
-          <button
-            className="m-2.5 category-name text-xl"
-            onClick={() => {
-              navigate("/aboutme");
-            }}
-          >
-            About Me
-          </button>
-          <button
-            className="m-2.5 category-name text-xl"
-            onClick={() => {
-              navigate("/project");
-            }}
-          >
-            Projects
-          </button>
-          {/* <button className="m-2.5 category-name">Contact</button> */}
-        </div>
-        <div className="flex my_record link">
-          <a href="https://github.com/nayul34" target="_blank" rel="noreferrer">
-            <BsGithub className="m-2.5 cursor-pointer  text-xl" />
-          </a>
-          <a href="https://velog.io/@dagg762" target="_blank" rel="noreferrer">
-            <SiVelog className="m-2.5 cursor-pointer  text-xl" />
-          </a>
-        </div>
+          Home
+        </button>
+        <button
+          className="m-2.5 category-name text-2xl text-slate-600 hover:text-slate-400"
+          onClick={() => {
+            window.scrollTo(0, 0);
+            navigate("/project");
+          }}
+        >
+          Projects
+        </button>
+        <button
+          className="m-2.5 category-name text-2xl text-slate-600 hover:text-slate-400"
+          onClick={() => {
+            window.scrollTo(0, 0);
+            navigate("/aboutme");
+          }}
+        >
+          About
+        </button>
       </div>
     </div>
   );

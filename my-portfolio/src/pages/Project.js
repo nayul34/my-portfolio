@@ -15,17 +15,26 @@ const Project = () => {
   };
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <div className="h-12 w-4/5 bg-gray-300 flex justify-around items-center sticky top-24">
-        <p className="text-2xl " onClick={scrollToTeam}>
-          Team
-        </p>
-        <p className="text-2xl">/</p>
-        <p className="text-2xl" onClick={scrollToSolo}>
-          Solo
-        </p>
+      <div className="w-full flex justify-center sticky top-32 z-20 bg-white">
+        <div className="h-10 w-2/5 flex justify-around items-center  ">
+          <p
+            className="text-xl cursor-pointer text-emerald-600/50 hover:text-emerald-600"
+            onClick={scrollToTeam}
+          >
+            Team
+          </p>
+          <p className="text-xl text-emerald-600/50">/</p>
+          <p
+            className="text-xl cursor-pointer text-emerald-600/50 hover:text-emerald-600"
+            onClick={scrollToSolo}
+          >
+            Solo
+          </p>
+        </div>
       </div>
+
       <Team />
-      <hr className=" w-full  "></hr>
+      <hr className=" w-full "></hr>
       <Solo />
     </div>
   );
