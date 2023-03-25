@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.882b220c.css",
+    "main.js": "/my-portfolio/static/js/main.9928077e.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/main-mypage.png": "/my-portfolio/static/media/main-mypage.e8d01185cdb31afd558a.png",
+    "static/media/main-home.png": "/my-portfolio/static/media/main-home.720f0b7b01d48a73cf15.png",
+    "static/media/main-responsive.png": "/my-portfolio/static/media/main-responsive.d51a5a22cfbb448720cc.png",
+    "static/media/main-category.png": "/my-portfolio/static/media/main-category.9c70f57a2bdfb861e60c.png",
+    "static/media/main-post.png": "/my-portfolio/static/media/main-post.85fcec6b619c6431603f.png",
+    "static/media/main-addpost.png": "/my-portfolio/static/media/main-addpost.6333939234501eb8bd63.png",
+    "static/media/pre-user.png": "/my-portfolio/static/media/pre-user.256fafb271fcac257783.png",
+    "static/media/main-chat.png": "/my-portfolio/static/media/main-chat.536a1c24803b9cacbb6c.png",
+    "static/media/pre-askquestion.png": "/my-portfolio/static/media/pre-askquestion.eb2ab7ad66289145e962.png",
+    "static/media/pre-question.png": "/my-portfolio/static/media/pre-question.5340396e5aebc6dc4f18.png",
+    "static/media/pre-home.png": "/my-portfolio/static/media/pre-home.c5a500b43a26755ff032.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.882b220c.css.map": "/my-portfolio/static/css/main.882b220c.css.map",
+    "main.9928077e.js.map": "/my-portfolio/static/js/main.9928077e.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.882b220c.css",
+    "static/js/main.9928077e.js"
+  ]
+}
