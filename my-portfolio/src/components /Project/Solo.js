@@ -28,7 +28,7 @@ const Solo = () => {
       content: "Next.js를 사용하여 ",
       function1: "오시는길(지도), 블로그 연결 등",
       function2: "• Next.js",
-      function3: "• Netlify를 이용하여 정적웹사이트 배포",
+      function3: "• Vercel를 이용하여 정적웹사이트 배포",
       skill: "Javascript, Next.js, vercel",
       github_link: "https://github.com/codestates-seb/seb41_main_035",
       github: "github.com/codestates-seb/seb41_main_035",
@@ -45,7 +45,7 @@ const Solo = () => {
       content:
         " 백엔드와 협업한 첫 프로젝트이며 서버와 통신을 하는 방식을 이해하고 익숙해지는 계기가 되었습니다. 그리고 redux-toolkit을",
       function1: "• Tailwind를 이용하여 CSS 작업",
-      function2: "• Vercel를 이용하여 정적 웹사이트 배포",
+      function2: "• Netlify를 이용하여 정적 웹사이트 배포",
 
       skill: "React, Styled-component, Javascript, Redux-toolkit, Axios",
       github_link: "https://github.com/codestates-seb/seb41_pre_007",
