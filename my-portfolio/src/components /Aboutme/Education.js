@@ -1,15 +1,15 @@
 const Education = () => {
   return (
-    <div className="w-4/5 h-112 bg-emerald-600/50  rounded-lg">
+    <div className="w-4/5  bg-emerald-600/50  rounded-lg">
       <div className="m-10">
         <p className="text-3xl text-white">Education</p>
         <hr className=" w-32 "></hr>
         <div className="flex">
-          <div className="border-l-[2px] h-52 pl-2 w-24 text-lg mt-12 ml-12 flex flex-col justify-between text-white">
+          <div className="border-l-[2px] lg:h-44 pl-2 w-44 text-lg mt-12 md:ml-12 flex flex-col justify-between text-white">
             <p>2022.08 - 2023.03</p>
             <p>2018.03 - 2022.02</p>
           </div>
-          <div className=" h-60 mt-12 ml-12">
+          <div className=" mt-12 md:ml-12">
             <div>
               <p className="text-xl font-bold">코드스테이츠(CodeStates)</p>
               <p className="text-lg">Front-End Engineering Bootcamp(41기)</p>
