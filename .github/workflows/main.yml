@@ -11,12 +11,12 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: npm install	// install 하는 패키지 명령어
-        working-directory:  // 디렉토리 위치 설정
+        run: npm install	
+        working-directory:  ../
 
       - name: Build
-        run: npm run build // Build 하는 패키지 명령어
-        working-directory: // 디렉토리 위치 설정
+        run: npm run build 
+        working-directory:../
 
       - name: Sync Bucket
         env:
@@ -28,4 +28,4 @@ jobs:
             --region ap-northeast-2 \
             build s3://my-portfolioo\
             --delete
-        working-directory: ../my-portfolio // 디렉토리 위치 설정
+        working-directory: ../
