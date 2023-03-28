@@ -16,7 +16,7 @@ jobs:
 
       - name: Build
         run: npm run build 
-        working-directory:../
+        working-directory: ../
 
       - name: Sync Bucket
         env:
