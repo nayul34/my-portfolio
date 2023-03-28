@@ -2,7 +2,7 @@ import "./App.css";
 import Main from "./pages/Main";
 import Project from "./pages/Project";
 import Aboutme from "./pages/Aboutme";
-import Header from "./components /Header";
+import Header from "./components /header";
 import Footer from "./components /Footer.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Look from "./pages/Team/Look";
