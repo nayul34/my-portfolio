@@ -1,8 +1,8 @@
 const Education = () => {
   return (
-    <div className="w-4/5  bg-emerald-600/50  rounded-lg">
+    <div className="w-11/12 sm:w-4/5  bg-emerald-600/50  rounded-lg">
       <div className="m-10">
-        <p className="text-3xl text-white">Education</p>
+        <p className="text-3xl text-white font-bold">Education</p>
         <hr className=" w-32 "></hr>
         <div className="flex">
           <div className="border-l-[2px] lg:h-44 pl-2 w-44 text-lg mt-12 md:ml-12 flex flex-col justify-between text-white">

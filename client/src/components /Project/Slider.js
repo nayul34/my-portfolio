@@ -20,31 +20,34 @@ const Slider = ({ images }) => {
 
   return (
     <div>
-      <div className="picture flex ">
+      <div className="picture flex justify-center ">
         <button>
           <GrPrevious
-            className="text-lg"
+            className="text-2xl"
             onClick={() => {
               moveSlide(-1);
             }}
           />
         </button>
-        <div className="window bg-slate-200 w-104 h-84 overflow-hidden  rounded-md border-2">
-          <div className="flexbox flex " style={style}>
+        <div className=" bg-slate-200 w-72 h-72 xl:w-112 xl:h-104  lg:w-80 sm:w-96 sm:h-96 overflow-hidden  rounded-md border-2">
+          <div className="flex " style={style}>
             {images.current.map((img) => (
               <div
                 key={img.id}
-                className="img  w-104 h-96 bg-center bg-contain bg-no-repeat flex-none justify-center "
+                className="sm:mt-6 xl:w-111 w-71 h-71 lg:w-79 sm:w-95 sm:h-95 bg-center bg-contain bg-no-repeat flex-none  "
                 style={{ backgroundImage: `url(${img.src})` }}
               >
-                <p className="text-center text-xl mt-4"> {img.title}</p>
+                <p className="text-center sm:text-xl lg:mt-3 xl:-mt-2">
+                  {" "}
+                  {img.title}
+                </p>
               </div>
             ))}
           </div>
         </div>
         <button>
           <GrNext
-            className="text-lg"
+            className="text-2xl"
             onClick={() => {
               moveSlide(1);
             }}

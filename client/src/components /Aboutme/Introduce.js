@@ -13,9 +13,9 @@ const Introduce = () => {
     },
   ];
   return (
-    <div className="w-4/5  bg-emerald-600/50 rounded-lg introduce flex flex-col">
+    <div className="w-11/12 sm:w-4/5  bg-emerald-600/50 rounded-lg introduce flex flex-col">
       <div className="sm:m-10 m-5">
-        <p className="text-3xl text-white">Introduce</p>
+        <p className="text-3xl text-white font-bold">Introduce</p>
         <hr className=" w-32 "></hr>
         <p className="text-xl sm:text-3xl mt-4">
           프론트엔드 개발자 김나율에 대해 소개합니다!

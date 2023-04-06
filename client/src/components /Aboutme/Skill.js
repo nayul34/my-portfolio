@@ -88,12 +88,12 @@ const Skill = () => {
     },
   ];
   return (
-    <div className="w-4/5  bg-emerald-600/50  rounded-lg">
-      <div className="m-10 v">
-        <p className="text-3xl text-white">기술스택</p>
+    <div className="w-11/12 sm:w-4/5 bg-emerald-600/50  rounded-lg">
+      <div className="m-8 ">
+        <p className="text-3xl text-white font-bold">기술스택</p>
         <hr className=" w-28 "></hr>
-        <div className="flex flex-col sm:flex-row  w-full  ">
-          <div className=" h-full bg-white w-full sm:w-1/3 rounded-lg items-center flex flex-col mt-4 justify-center p-4 ">
+        <div className="flex flex-col sm:flex-row  w-full justify-center ">
+          <div className=" h-full bg-white w-full sm:w-1/4 sm:m-3 rounded-lg items-center flex flex-col mt-4 justify-center p-4 ">
             <div className="w-3/4 text-center border-b-[2px] border-black pb-2">
               <p className="text-xl font-bold">언어</p>
             </div>
@@ -108,7 +108,7 @@ const Skill = () => {
               })}
             </div>
           </div>
-          <div className=" h-full bg-white  w-full sm:w-1/3 rounded-lg items-center flex flex-col mt-4   justify-center p-4 ">
+          <div className=" h-full bg-white  w-full sm:w-1/3 sm:m-3 rounded-lg items-center flex flex-col mt-4   justify-center p-4 ">
             <div className="w-3/4 text-center border-b-[2px] border-black pb-2">
               <p className="text-xl font-bold"> 프레임워크 </p>
               <p className="text-xl font-bold"> & 라이브러리</p>
@@ -124,7 +124,7 @@ const Skill = () => {
               })}
             </div>
           </div>
-          <div className="h-full bg-white w-full sm:w-1/3 rounded-lg items-center flex flex-col mt-4  justify-center p-4">
+          <div className="h-full bg-white w-full sm:w-1/4 sm:m-3 rounded-lg items-center flex flex-col mt-4  justify-center p-4">
             <div className="w-3/4 text-center border-b-[2px] border-black pb-2">
               <p className="text-xl font-bold">그 외 </p>
             </div>
