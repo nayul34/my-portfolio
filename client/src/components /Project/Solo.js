@@ -28,7 +28,7 @@ const Solo = () => {
       function1: "오시는길(지도), 블로그 연결 등",
       // function2: "• Next.js",
       function2: "• Vercel를 이용하여 정적웹사이트 배포",
-      skill: "Typescript, Next.js, vercel",
+      skill: "Javascript, Next.js, Vercel,Styled-component",
       github_link: "https://github.com/nayul34/real-estate__web",
       retrospect_link: "",
       goto: "/project/realestate",
