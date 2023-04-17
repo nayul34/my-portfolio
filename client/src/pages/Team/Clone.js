@@ -1,10 +1,13 @@
 import { BsGithub } from "react-icons/bs";
+import { SiVelog } from "react-icons/si";
 
 const Clone = () => {
   const onMoveLink = (link) => {
     window.open(link, "", "");
   };
   const Github = "https://github.com/codestates-seb/seb41_pre_007";
+  const Velog =
+    "https://velog.io/@dagg762/%ED%94%84%EB%A6%AC%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0";
   return (
     <div className="w-full flex justify-center">
       <div className="sm:w-4/5 w-full p-3 sm:p-0">
@@ -19,31 +22,64 @@ const Clone = () => {
             <p>2022.12 - 2023.01</p>
             <p>팀원 : 프론트엔드 3명, 백엔드 3명</p>
           </div>
-          <div className="mt-5 flex-col justify-center items-center hidden sm:flex">
+          <div className="sm:flex flex-col mt-5 hidden">
             <p className="text-xl">📎 Links</p>
-            <button
-              onClick={() => {
-                onMoveLink(Github);
-              }}
-              className="bg-slate-200 rounded-full w-12 h-12 flex justify-center items-center hover:bg-slate-300"
-            >
-              <BsGithub />
-            </button>
+            <div className="flex">
+              <button
+                onClick={() => {
+                  onMoveLink(Github);
+                }}
+                className="bg-slate-200 mr-2 rounded-full w-12 h-12 flex justify-center items-center hover:bg-slate-300"
+              >
+                <BsGithub />
+              </button>
+              <button
+                onClick={() => {
+                  onMoveLink(Velog);
+                }}
+                className="bg-slate-200 rounded-full w-12 h-12 flex justify-center items-center hover:bg-slate-300"
+              >
+                <SiVelog />
+              </button>
+            </div>
           </div>
         </div>
         <hr className=" w-full border-[1px] mt-2 border-black"></hr>
-        <div className="m-5 flex-col justify-center  sm:hidden flex">
-          <p className="text-xl">📎 Links</p>
-          <button className="hover:scale-75 cursor-pointer border-slate-400 border-solid border-2 rounded w-16 h-8 flex justify-center items-center ">
-            Github
-          </button>
+        <div className="flex sm:hidden flex-col m-3">
+          <p className="text-xl">📎Links</p>
+          <div className="flex justify-around ">
+            <div className="flex flex-col justify-center items-center">
+              <button
+                onClick={() => {
+                  onMoveLink(Github);
+                }}
+                className="bg-slate-200 mr-2 rounded-full w-12 h-12 flex justify-center items-center hover:bg-slate-300"
+              >
+                <BsGithub />
+              </button>
+              github
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <button
+                className="bg-slate-200 rounded-full w-12 h-12 flex justify-center items-center hover:bg-slate-300"
+                onClick={() => {
+                  onMoveLink(Velog);
+                }}
+              >
+                <SiVelog />
+              </button>
+              Velog
+            </div>
+          </div>
         </div>
         <div className="m-3">
           <p className="sm:text-3xl text-2xl">✏️ 서비스 내용</p>
           <p className="mt-2 text-lg sm:text-xl"> - 주요 기능 -</p>
           <p className="text-sm">(색깔로 표시한것은 내가 구현한 것)</p>
           <p className="text-md sm:text-lg">• 회원가입, 로그인(로그아웃) </p>
-          <p className="text-orange-500 text-md sm:text-lg">• 게시물 CRUD</p>
+          <p className="text-md sm:text-lg">
+            • <span className="text-cyan-600  ">게시물 CRUD</span>
+          </p>
           <div className="flex text-md sm:text-lg">
             <p>• 댓글 CRUD </p>
           </div>
@@ -53,7 +89,8 @@ const Clone = () => {
           <p className="sm:text-3xl text-2xl">🗂️ 개발내용</p>
 
           <p className="mt-2 text-xl font-bold">
-            - Redux-toolkit을 이용한 상태관리 -
+            - <span className="text-orange-600">Redux-toolkit</span>을 이용한
+            상태관리 -
           </p>
           <p>
             검색창을 클릭한 상태를 Redux-toolkit으로 관리하였습니다. 이때
@@ -61,7 +98,8 @@ const Clone = () => {
             선언하는 장점을 느낄수 있었습니다.
           </p>
           <p className="mt-2 text-xl font-bold">
-            - 다양한 react hook을 이용한 기능 구현 -
+            - 다양한 <span className="text-orange-600">React Hook</span>을
+            이용한 기능 구현 -
           </p>
           <p>
             UPDATE 기능을 구현시 useState를 이용하여 편집한 텍스트를 상태를
