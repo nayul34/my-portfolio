@@ -47,6 +47,12 @@ module.exports = {
         43: "10.75rem",
         42: "10.5rem",
       },
+      fontFamily: {
+        "press-start": ['"Press Start 2P"', "cursive"],
+        "pen-script": ['"Nanum Pen Script"', "cursive"],
+        "is-sunflower": ['"Sunflower"', "sans-serif"],
+        "is-gothic": ['"Gothic A1"', "sans-serif"],
+      },
     },
   },
 };

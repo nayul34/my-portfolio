@@ -58,7 +58,9 @@ const Solo = () => {
             key={data.id}
             className="bg-white w-11/12 xl:w-5/6 flex flex-col items-center mb-4 p-5 rounded-md "
           >
-            <p className=" text-2xl sm:text-4xl">{data.title}</p>
+            <p className=" text-2xl sm:text-4xl font-semibold font-is-sunflower">
+              {data.title}
+            </p>
 
             <div className="project-introduce flex flex-col lg:flex-row mt-4 sm:mt-8 w-full  items-center">
               <Slider images={data.images} />

@@ -12,7 +12,7 @@ const Look = () => {
     window.open(link, "", "");
   };
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center font-is-sunflower">
       <div className="sm:w-4/5 w-full p-3 sm:p-0">
         <div className="w-3/4  mt-3  flex ">
           <p className="sm:text-xl text-slate-500 ">home ▶︎ </p>

@@ -47,13 +47,15 @@ const Main = () => {
           className="img  h-100  w-full bg-center bg-cover bg-no-repeat flex justify-center items-center relative z-1"
           style={{ backgroundImage: `url(${background})` }}
         >
-          <div className="text-xl flex flex-col items-center justify-center  md:text-4xl ">
+          <div className="text-3xl flex flex-col items-center justify-center  md:text-4xl font-pen-script">
             <FaQuoteLeft />
             <p className="mb-5 mt-2">안녕하세요.</p>
             <p className="mb-5">하고 싶은게 많아 끝없이 노력하는</p>
             <div className="mb-5 "> {title}</div>
             <FaQuoteRight />
-            <p className="mt-5 text-2xl">Welcome to the Nayul's portfolio</p>
+            <p className="mt-5 text-2xl font-is-gothic ">
+              Welcome to the Nayul's portfolio
+            </p>
           </div>
         </div>
       </div>

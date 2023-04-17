@@ -9,7 +9,7 @@ const Clone = () => {
   const Velog =
     "https://velog.io/@dagg762/%ED%94%84%EB%A6%AC%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0";
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center font-is-sunflower">
       <div className="sm:w-4/5 w-full p-3 sm:p-0">
         <div className="w-3/4  mt-3  flex ">
           <p className="sm:text-xl text-slate-500 ">home ▶︎ </p>
