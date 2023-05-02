@@ -11,6 +11,8 @@ import prehome from "../../images/pre-home.png";
 import prequestions from "../../images/pre-question.png";
 import praskquestions from "../../images/pre-askquestion.png";
 import preuser from "../../images/pre-user.png";
+import preedit from "../../images/pre-editquestion.png";
+import pretag from "../../images/pre-tags.png";
 
 import { BsGithub } from "react-icons/bs";
 import { SiVelog } from "react-icons/si";
@@ -33,6 +35,8 @@ const Team = () => {
     { id: 1, title: "게시물과 댓글 페이지", src: prequestions },
     { id: 2, title: "질문을 작성하는 페이지", src: praskquestions },
     { id: 3, title: "사용자 프로필 페이지", src: preuser },
+    { id: 3, title: "질문을 수정하는 페이지", src: preedit },
+    { id: 3, title: "Tags 페이지", src: pretag },
   ]);
 
   const team = [

@@ -66,13 +66,13 @@ const Main = () => {
         <div className="md:h-64 lg:w-5/6 w-full flex flex-col md:flex-row bg-emerald-600/50 mt-4 justify-center items-center">
           <div className="h-60 w-5/6 md:w-104 bg-white m-4">
             <div
-              className="img  h-full w-full bg-center bg-slate-200 bg-contain bg-no-repeat flex justify-center items-center"
+              className="img  h-full w-full bg-center bg-contain bg-no-repeat flex justify-center items-center"
               style={{ backgroundImage: `url(${mainhome2})` }}
             ></div>
           </div>
           <div className="h-60 w-5/6 md:w-104 bg-white m-4 ">
             <div
-              className="img  h-full w-full bg-center bg-slate-200 bg-contain bg-no-repeat flex justify-center items-center"
+              className="img  h-full w-full bg-center bg-contain bg-no-repeat flex justify-center items-center"
               style={{ backgroundImage: `url(${prehome})` }}
             ></div>
           </div>
